@@ -4,10 +4,11 @@
 // 32679 -> 6
 
 Console.WriteLine("Введите число");
-string number=Console.ReadLine();
+string number = Console.ReadLine();
 int size = number.Length;
 if (size > 2)
     {
     Console.WriteLine($"Третья цифра числа {number[2]} ");
     }
-else Console.WriteLine("вы вели  НЕ трехзначное число");
+else Console.WriteLine($"вы вели слишком маленькое число");
+
