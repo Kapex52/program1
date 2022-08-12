@@ -4,7 +4,7 @@
 // 32679 -> 6
 
 Console.WriteLine("Введите число");
-string number = Console.ReadLine();
+string? number = Console.ReadLine();
 int size = number.Length;
 if (size > 2)
     {
