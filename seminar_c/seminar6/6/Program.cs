@@ -1,2 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿List<int> digits = new List<int>();
+ 
+while (true)
+{
+  var digit = int.parse(Console.ReadLine());
+  if (digit==42)
+    break;
+  digits.Add(digit);
+}
