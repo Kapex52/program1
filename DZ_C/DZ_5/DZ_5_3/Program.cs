@@ -7,7 +7,7 @@ int size = Convert.ToInt32(Console.ReadLine());
 double[] array = new double[size];
 for (int i = 0; i < size; i++)
 {
-    array[i] = new Random().Next(35) + new Random().NextDouble();
+    array[i] = new Random().Next(35) +  Math.Round(new Random().NextDouble(), 2);  /// Math.Round(testDecimal, 2, MidpointRounding.AwayFromZero))
     Console.Write(array[i] + " ");
     Console.WriteLine(" ");
 }
