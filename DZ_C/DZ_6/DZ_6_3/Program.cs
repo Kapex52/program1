@@ -4,15 +4,15 @@
 // 3 -> 11
 // 2 -> 10
 Console.WriteLine("Ведите число");
-int ishodniyNumber = Convert.ToInt32(Console.ReadLine());
-int a = 0;
+int vvodDannih = Convert.ToInt32(Console.ReadLine());
+int  ishodniyNumber= vvodDannih;
 int i = 0;
-string[] rezult = new string[ishodniyNumber];
-while (ishodniyNumber >= 1)
+string[] rezult = new string[vvodDannih];
+while (vvodDannih >= 1)
 {
-    rezult[i] = Convert.ToString(ishodniyNumber % 2);
+    rezult[i] = Convert.ToString(vvodDannih % 2);
     i++;
-    ishodniyNumber = ishodniyNumber / 2;
+    vvodDannih = vvodDannih / 2;
 };
 Array.Reverse(rezult);
-Console.WriteLine($"Пересечение в точке: {String.Join("", rezult)}");
+Console.WriteLine($"десятичное число {ishodniyNumber} в двоисном виде {String.Join("", rezult)}");
